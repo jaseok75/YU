@@ -1,10 +1,22 @@
+
 """
 Project: 동빈나_정렬_위에서 아래로
 Date: 2022.01.06.목
-Content: 선택 정렬
 """
 N = int(input())
 sequence = []
+
+def quick_sort(array):
+    if len(array) <= 1:
+        return array
+
+    pivot = array[0]
+    tail = array[1:]
+
+    left_side = [x for x in tail if x <= pivot]
+    right_side = [x for x in tail if x > pivot]
+
+    return quick_sort(left_side) + [pivot] + quick_sort(right_side)
 
 for i in range(N):
     number = int(input())
