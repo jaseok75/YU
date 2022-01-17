@@ -1,37 +1,43 @@
 """
 Project: 동빈나_구현_특정 거리의 도시 찾기
 Date: 2022.01.14.금.
-Coment: 
-- DFS로 구현했지만 메모리 초과 젠장
-- 모든 노드에 몇 번씩 반복하면서 들어가고 재귀로 하다보니 난장판이 난 것 같다.
-- 코드는 굉장히 간단했지만,
-- 내가 해결할 수 없다
-- 결론: DFS는 방법이 될 수 없었다.
+Coment:
+- 결국 Dijkstra로 해결
 """
-import sys
-sys.setrecursionlimit(10**6)
 
-def dfs(idx, cost):
-    for city in citys[idx]:
-        if distance[city] == 0:
-            distance[city] = cost + 1
-        elif distance[city] != 0:
-            distance[city] = min(cost + 1, distance[city])
-        dfs(city, distance[city])
-    return
+import sys
+import heapq
+input = sys.stdin.readline
+INF = int(1e9)
+
+def dijkstra(x, graph):
+    q = []
+    heapq.heappush(q, (0, x))
+    distance = [INF] * (n + 1)
+    distance[x] = 0
+    while q:
+        dist, now = heapq.heappop(q)
+        if distance[now] < dist:
+            continue
+        for i in graph[now]:
+            cost = dist + i[1]
+            if cost < distance[i[0]]:
+                distance[i[0]] = cost
+                heapq.heappush(q, (cost, i[0]))
+    return distance
 
 if __name__ == "__main__":
-    n, m, k, x = map(int, sys.stdin.readline().split())
-    citys = [[] for i in range(n + 1)]
-    distance = [0] * (n + 1)
+    n, m, k, x = map(int, input().split())
+    graph = [[] for i in range(n + 1)]
     flag = 0
 
-    for i in range(m):
-        a, b = map(int, sys.stdin.readline().split())
-        citys[a].append(b)
-    dfs(x, 0)
+    for _ in range(m):
+        a, b = map(int , input().split())
+        graph[a].append((b, 1))
 
-    for i in range(n, 1, -1):
+    distance = dijkstra(x, graph)
+
+    for i in range(1, n + 1):
         if distance[i] == k:
             print(i)
             flag = 1
