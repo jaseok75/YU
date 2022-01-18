@@ -1,6 +1,8 @@
 """
 Project: 동빈나_DFS/BFS_연구소
 Date: 2022.01.17.월.
+Comment:
+- 아직 성공 못 한 코드임
 """
 
 import sys
