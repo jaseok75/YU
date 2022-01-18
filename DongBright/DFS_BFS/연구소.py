@@ -2,7 +2,8 @@
 Project: 동빈나_DFS/BFS_연구소
 Date: 2022.01.17.월.
 Comment:
-- 아직 성공 못 한 코드임
+- 완벽 성공
+- 시간은 좀 오래걸렸는데 성공했다.
 """
 
 import sys
@@ -29,13 +30,14 @@ def dfs(x, y):
         ny = y + dy[i]
         if isRange(nx, ny) and visited[nx][ny] and new_map[nx][ny] == 0:
             dfs(nx, ny)
+    return
 
 if __name__ == "__main__":
     n, m = map(int, input().split())
     input_map = [list(map(int, input().split())) for _ in range(n)]
     index_map = []
     new_map = []
-    min_safety_area = n * m
+    max_safety_area = 0
 
     for i in range(n):
         for j in range(m):
@@ -45,7 +47,7 @@ if __name__ == "__main__":
     beouk = list(itertools.combinations(index_map, 3))
 
     for idx in beouk:
-        visited = [[True] * m] * n
+        visited = [[True] * m for _ in range(n)]
         safety_area = 0
         new_map = copy.deepcopy(input_map)
         new_map[idx[0][0]][idx[0][1]] = 1
@@ -61,6 +63,6 @@ if __name__ == "__main__":
             for j in range(m):
                 if new_map[i][j] == 0:
                     safety_area += 1
-        min_safety_area = min(safety_area, min_safety_area)
+        max_safety_area = max(safety_area, max_safety_area)
 
-    print(min_safety_area)
+    print(max_safety_area)
