@@ -1,18 +1,24 @@
 """
 Project: 동빈나_이진 탐색 문제_정렬된 배열에서 특정 수의 개수 구하기
 Date: 2022.01.20.목.
-Coment:
-- 난이도 2가 이렇게나 쉬울 일?
-- 무난하게 시작한다잉
+Comment:
+- bisect 모듈 사용해서 개수 구하기
+- bisect 엄청난 모듈이다
+- 이건 log(n) 복잡도를 가지게 구현
 """
+
+import bisect
 
 if __name__ == "__main__":
     n, x = map(int, input().split())
     numbers = list(map(int, input().split()))
 
-    number_count = numbers.count(x)
+    left_count = bisect.bisect_left(numbers, x)
+    right_count = bisect.bisect_right(numbers, x)
 
-    if number_count == 0:
+    count = right_count - left_count
+
+    if count == 0:
         print("-1")
     else:
-        print(number_count)
+        print(count)
