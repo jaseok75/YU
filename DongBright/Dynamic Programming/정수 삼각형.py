@@ -1,5 +1,5 @@
 """
-Project: DongBright_다이나믹 프로그래밍_퇴사
+Project: DongBright_다이나믹 프로그래밍_정수 삼각형
 Date: 2022.01.25.화.
 Comment:
 - 금광 문제랑 비슷
