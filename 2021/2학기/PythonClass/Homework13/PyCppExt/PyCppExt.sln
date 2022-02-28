@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PyCppExt", "PyCppExt\PyCppExt.vcxproj", "{2FD2C950-21EF-4472-A869-2E98C2E3B303}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PyApp", "PyApp\PyApp.pyproj", "{1F388895-188D-4C5A-AE5A-C50B577EB9C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FD2C950-21EF-4472-A869-2E98C2E3B303}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{2FD2C950-21EF-4472-A869-2E98C2E3B303}.Debug|x64.ActiveCfg = Debug|x64
+		{2FD2C950-21EF-4472-A869-2E98C2E3B303}.Debug|x64.Build.0 = Debug|x64
+		{2FD2C950-21EF-4472-A869-2E98C2E3B303}.Debug|x86.ActiveCfg = Debug|Win32
+		{2FD2C950-21EF-4472-A869-2E98C2E3B303}.Debug|x86.Build.0 = Debug|Win32
+		{2FD2C950-21EF-4472-A869-2E98C2E3B303}.Release|Any CPU.ActiveCfg = Release|Win32
+		{2FD2C950-21EF-4472-A869-2E98C2E3B303}.Release|x64.ActiveCfg = Release|x64
+		{2FD2C950-21EF-4472-A869-2E98C2E3B303}.Release|x64.Build.0 = Release|x64
+		{2FD2C950-21EF-4472-A869-2E98C2E3B303}.Release|x86.ActiveCfg = Release|Win32
+		{2FD2C950-21EF-4472-A869-2E98C2E3B303}.Release|x86.Build.0 = Release|Win32
+		{1F388895-188D-4C5A-AE5A-C50B577EB9C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F388895-188D-4C5A-AE5A-C50B577EB9C4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1F388895-188D-4C5A-AE5A-C50B577EB9C4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1F388895-188D-4C5A-AE5A-C50B577EB9C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F388895-188D-4C5A-AE5A-C50B577EB9C4}.Release|x64.ActiveCfg = Release|Any CPU
+		{1F388895-188D-4C5A-AE5A-C50B577EB9C4}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9521CA6A-4C35-4122-9E85-DF7CE4BC9C4F}
+	EndGlobalSection
+EndGlobal

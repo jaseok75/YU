@@ -1,0 +1,12 @@
+﻿  PyCppExt.cpp
+C:\Users\USER\AppData\Local\Programs\Python\Python37-32\Lib\site-packages\pybind11\include\pybind11\detail\common.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+F:\3학년\2학기\Python\Homework\Homework13\PyCppExt\PyCppExt\PyCppExt.cpp(62,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+F:\3학년\2학기\Python\Homework\Homework13\PyCppExt\PyCppExt\PyCppExt.cpp(215): message : 컴파일되는 함수 템플릿 인스턴스화 'pybind11::array_t<int,16> add_arrays<int>(pybind11::array_t<int,16>,pybind11::array_t<int,16>)'에 대한 참조를 확인하세요.
+F:\3학년\2학기\Python\Homework\Homework13\PyCppExt\PyCppExt\PyCppExt.cpp(80,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+F:\3학년\2학기\Python\Homework\Homework13\PyCppExt\PyCppExt\PyCppExt.cpp(217): message : 컴파일되는 함수 템플릿 인스턴스화 'pybind11::array_t<int,16> sort_array<int>(pybind11::array_t<int,16>)'에 대한 참조를 확인하세요.
+F:\3학년\2학기\Python\Homework\Homework13\PyCppExt\PyCppExt\PyCppExt.cpp(84,28): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+F:\3학년\2학기\Python\Homework\Homework13\PyCppExt\PyCppExt\PyCppExt.cpp(153,23): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
+F:\3학년\2학기\Python\Homework\Homework13\PyCppExt\PyCppExt\PyCppExt.cpp(200): message : 컴파일되는 함수 템플릿 인스턴스화 'pybind11::array_t<int,16> merge<int>(pybind11::array_t<int,16>,int,int)'에 대한 참조를 확인하세요.
+F:\3학년\2학기\Python\Homework\Homework13\PyCppExt\PyCppExt\PyCppExt.cpp(219): message : 컴파일되는 함수 템플릿 인스턴스화 'pybind11::array_t<int,16> merge_sort<int>(pybind11::array_t<int,16>,int,int)'에 대한 참조를 확인하세요.
+F:\3학년\2학기\Python\Homework\Homework13\PyCppExt\PyCppExt\PyCppExt.cpp(173,11): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
+  PyCppExt.vcxproj -> F:\3학년\2학기\Python\Homework\Homework13\PyCppExt\Debug\PyCppExt.pyd
