@@ -11,4 +11,25 @@ for (int k = 0; k < n; k++) {
     }
 }
 ```
-- LIS의 길이를 구하기 위해 이분 탐색을 활용할 수 있다.
+>> LIS의 길이를 구하기 위해 이분 탐색을 활용할 수 있다.
+>> 이분 탐색 시 Lower Bound를 사용할 수 있다.
+## Lower Bound
+- 경계값을 찾는 함수이다. 정렬된 상태에서 사용할 수 있다.
+- 찾는 값이 처음으로 나오는 인덱스를 찾는 것이기 때문에 right = mid를 사용했다.
+- 응용해서 left = mid를 사용하면 찾는 값이 마지막으로 나오는 인덱스를 찾을 수 있다.
+```py
+def lower_bound(left, right, k):
+    while left <= right:
+        mid = (left + right) // 2
+        if my_list[mid] < k:
+            left = mid + 1
+        elif my_list[mid] > k:
+            right = mid - 1
+        elif my_list[mid] == k:
+            if right == mid:
+                break
+    if my_list[mid] == k:
+        return mid
+    else:
+        return -1
+```
