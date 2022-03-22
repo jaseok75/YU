@@ -1,0 +1,10 @@
+﻿  Matrix.cpp
+  main.cpp
+D:\프로그래밍언어\실습3\Project38\Project38\main.cpp(25,8): warning C4101: 'fin' :참조되지 않은 지역 변수입니다.
+D:\프로그래밍언어\실습3\Project38\Project38\main.cpp(318,14): warning C4101: 'row_size' :참조되지 않은 지역 변수입니다.
+D:\프로그래밍언어\실습3\Project38\Project38\main.cpp(318,24): warning C4101: 'col_size' :참조되지 않은 지역 변수입니다.
+D:\프로그래밍언어\실습3\Project38\Project38\main.cpp(321,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+D:\프로그래밍언어\실습3\Project38\Project38\main.cpp(322,9): warning C4101: 'd' :참조되지 않은 지역 변수입니다.
+D:\프로그래밍언어\실습3\Project38\Project38\main.cpp(377,28): warning C4101: 'res' :참조되지 않은 지역 변수입니다.
+  코드를 생성하고 있습니다...
+  Project38.vcxproj -> D:\프로그래밍언어\실습3\Project38\Debug\Project38.exe
