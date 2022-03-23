@@ -1,0 +1,4 @@
+﻿  hexadecimal.cpp
+D:\프로그래밍언어\실습3\Homework10_1\Homework10_1\hexadecimal.cpp(9,16): warning C4101: 'uc' :참조되지 않은 지역 변수입니다.
+D:\프로그래밍언어\실습3\Homework10_1\Homework10_1\hexadecimal.cpp(70,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Homework10_1.vcxproj -> D:\프로그래밍언어\실습3\Homework10_1\Debug\Homework10_1.exe
