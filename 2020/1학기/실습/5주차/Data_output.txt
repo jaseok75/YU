@@ -1,0 +1,53 @@
+
+ArrayStatistics_basicArray .....
+Total ( 10) integer data : 
+Size of integer array = 10
+   11    12    13    14    15    16    17    18    19    20 
+
+min ( 11), max ( 20), sum (  155.00), average (   15.50), variance (    8.25), standard deviation (    2.87)
+
+ArrayStatistics_externArray .....
+Total ( 35) integer data : 
+Size of integer array = 35
+    1     2     3     4     5     6     7     8     9    10 
+   11    12    13    14    15    16    17    18    19    20 
+   21    22    23    24    25    26    27    28    29    30 
+   31    32    33    34    35 
+min (  1), max ( 35), sum (  630.00), average (   18.00), variance (  102.00), standard deviation (   10.10)
+
+ArrayStatistics_fileDataArray .....
+Total ( 20) integer data : 
+Size of integer array = 20
+    1     2     3     4     5     6     7     8     9    10 
+   11    12    13    14    15    16    17    18    19    20 
+
+min (  1), max ( 20), sum (  210.00), average (   10.50), variance (   33.25), standard deviation (    5.77)
+
+ArraySatistics_inputArray .....
+Total ( 10) integer data : 
+Size of integer array = 10
+   10     9     8     7     6     5     4     3     2     1 
+
+min (  1), max ( 10), sum (   55.00), average (    5.50), variance (    8.25), standard deviation (    2.87)
+
+ArrayStatistics_dynArray .....
+Total (10000) integer data : 
+Size of integer array = 10000
+ 9687  9813   109  3675  3167  1997  4831  7782  6075  4396 
+ 6588  9593  4646  6910  2567  8953  9985  1314  7774  3952 
+...
+ 6847  6083  8189  8768  8821  4430  9529  7867  4934  7066 
+ 8661  4721  3900  7747  4349  9445  3039  6689  9084  4515 
+
+min (  0), max (9999), sum (49995000.00), average ( 4999.50), variance (8333333.25), standard deviation ( 2886.75)
+
+ArrayStatistics_dynArray .....
+Total (1000000) integer data : 
+Size of integer array = 1000000
+734975 886710 921382 267595 546163 807457 985228 690341 136266 294348 
+333817 122240 843367 826556  7643 326201 681955 127818 478867 274244 
+...
+272667 172857 931899 144902 931037 958644 510448 532459 963559 421184 
+914361 646724 208451 402187 188127 182256 339105 991921 320253 522824 
+
+min (  0), max (999999), sum (499999500000.00), average (499999.50), variance (83333333333.80), standard deviation (288675.13)
